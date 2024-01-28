@@ -41,4 +41,4 @@ tail -f ./splunk/var/log/splunk/splunkd_stderr.log
 ```
 ## 5. Go to http://localhost:8000 and see that splunk server is up
 
-<img src="https://imgur.com/EoNUICA" />
+<img src="https://i.imgur.com/EoNUICA.png" />
