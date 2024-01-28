@@ -37,6 +37,7 @@ docker ps | grep splunk
 ```
 
 * Logs File
+
 Log file location: ./splunk/var/log
 
 ```
@@ -44,6 +45,7 @@ tail -f ./splunk/var/log/splunk/splunkd_stderr.log
 ```
 
 * Manage configuration files
+
 Log file location: ./splunk/etc
 
 * Go to http://localhost:8000 and see that splunk server is up
