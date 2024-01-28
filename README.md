@@ -1,7 +1,10 @@
 # Setup Splunk docker
 
-**Source: https://docs.docker.com/config/containers/logging/splunk**
-
+**Source**
+```
+https://docs.docker.com/config/containers/logging/splunk
+https://github.com/splunk/docker-logging-plugin
+```
 ## 1. Config docker-compose file
 ```
 version: "3.6"
