@@ -1,11 +1,11 @@
-# Setup Splunk docker
+# I. Setup Splunk docker
 
 **Source**
 ```
 https://docs.docker.com/config/containers/logging/splunk
 https://github.com/splunk/docker-logging-plugin
 ```
-## 1. Config docker-compose file
+* Config docker-compose file
 ```
 version: "3.6"
 
@@ -24,24 +24,30 @@ services:
       - ./splunk/var:/opt/splunk/var
 ```
 
-## 2. Deploy docker-compose.yml
+* Deploy docker-compose.yml
 ```
 docker-compose up -d
 ```
 
-## 3. Check container
+* Check container
 ```
 docker ps | grep splunk
 08ea0225cc61   splunk/splunk:9.0.5           "/sbin/entrypoint.sh…"   5 days ago   Up 5 days (healthy)                                                 splunk
 
 ```
 
-## 4. Logs File
+* Logs File
 Log file location: ./splunk/var/log
 
 ```
 tail -f ./splunk/var/log/splunk/splunkd_stderr.log
 ```
-## 5. Go to http://localhost:8000 and see that splunk server is up
+
+* Manage configuration files
+Log file location: ./splunk/etc
+
+* Go to http://localhost:8000 and see that splunk server is up
 
 <img src="https://i.imgur.com/EoNUICA.png" />
+
+
